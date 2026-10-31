@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Narendra AppLock</string>
+    <string name="lock_screen_title">Enter PIN to Unlock</string>
+    <string name="lock_pattern_title">Draw Pattern to Unlock</string>
+    <string name="fingerprint_hint">Touch the fingerprint sensor</string>
+    <string name="intruder_selfie_title">Intruder Break-in Alert</string>
+    <string name="vault_title">Private Media Vault</string>
+    <string name="permission_overlay_title">Draw Over Other Apps</string>
+    <string name="permission_usage_title">Usage Access</string>
+    <string name="fake_crash_message">Unfortunately, the application has stopped working.</string>
+</resources>

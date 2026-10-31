@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/ivLockedAppIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/lock_screen_title"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSubHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Locked by Narendra AppLock"
+        android:textColor="@color/emerald_400"
+        android:textSize="12sp" />
+
+    <!-- PIN Indicators -->
+    <LinearLayout
+        android:id="@+id/layoutPinDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal">
+
+        <View android:id="@+id/dot1" android:layout_width="16dp" android:layout_height="16dp" android:layout_margin="8dp" android:background="@color/slate_700" />
+        <View android:id="@+id/dot2" android:layout_width="16dp" android:layout_height="16dp" android:layout_margin="8dp" android:background="@color/slate_700" />
+        <View android:id="@+id/dot3" android:layout_width="16dp" android:layout_height="16dp" android:layout_margin="8dp" android:background="@color/slate_700" />
+        <View android:id="@+id/dot4" android:layout_width="16dp" android:layout_height="16dp" android:layout_margin="8dp" android:background="@color/slate_700" />
+    </LinearLayout>
+
+    <!-- Keypad Grid Container -->
+    <GridLayout
+        android:id="@+id/keypadGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
+        <!-- Digit Buttons 0-9 and Delete dynamically bound -->
+    </GridLayout>
+
+</LinearLayout>
